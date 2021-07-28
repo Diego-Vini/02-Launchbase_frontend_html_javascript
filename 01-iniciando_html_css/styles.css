@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+:root {
+  --color-pink: #D980FA;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  body {
+    background: #ecf0f1;
+    color: #34495e;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  header {
+    padding: 20px;
+    border-bottom: 1px solid #34495e;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .links {
+    text-align: center;
+  }
+  .links a {
+      color: #34495e;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0 16px;
+      text-decoration: none;
+  }
+  .links a:hover {
+    color: var(--color-pink);
+    transition: color 200ms;
+  }
+  #perfil {
+    text-align: center;
+    padding: 32px;
+  }
+  #perfil img {
+    border-radius: 50%;
+    border: 1px solid var(--color-pink);
+    height: 300px;
+  }
+  #perfil h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: bold;
+  }
+  #perfil h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+  }
+
+  #perfil p {
+    max-width: 400px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  #perfil p a {
+      color:var(--color-pink);
+  }
+
+  #links-footer a {
+    border-bottom: 1px solid var(--color-pink);
+  }
+
+  /*Pagina de hobbies*/
+
+  #hobbies {
+    text-align: center;
+    padding: 32px;
+  }
+
+  #hobbies p {
+    max-width: 900px;
+    margin: 32px auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+/*Cards*/
+
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.card_image-container img {
+  width: 100%;
+}
+
+.card_content,
+.card_info {
+  padding: 24px;
+}
+ 
+.card_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.theme {
+    background: rgba(0, 0, 0, 0.2);
+    filter: brightness(90%);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* modal*/
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .material-icons {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer; 
+}
+
+/*modal.active*/
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%
+
+}
+
+/*Página de carreira*/
+.career {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.career h1{
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  }
+/*.career-professional {
+  position: relative;
+}*/
+
+.career-storytelling_1 {
+  max-width: 400px;
+  padding: 0 0 24px;
+}
+
+
+.career-storytelling_2 {
+  max-width: 400px;
+  padding: 0 0 24px;
+  position:relative;
+  left: 450px;
+}
+.career-storytelling_1 h3,
+.career-storytelling_2 h3{
+  text-align: center;
+}
+
+.career-storytelling_1 p,
+.career-storytelling_2 p {
+  margin-top: 24px;
+};
+
+/* Page education*/
+
+.education{
+  max-width: 800px;
+  margin: 0 auto;;
+}
+
+.education h1{
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.card-education {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 30px;
+}
+
+.card-education img {
+  width: 100%;
+  height: 65%;
+}
+
+.card_content,
+.card-date-conclusion {
+  padding: 24px;
+}
+
+.card-date-conclusion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.end-course {
+  text-align: right;
+}
+.card-certification {
+  text-align: center;
+}
+
+.card-certification a{
+  margin-bottom: 24px;
+}
+
+.card-education a {
+  color: #34495e;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+.card-education a:hover {
+color: var(--color-pink);
+transition: color 200ms;
+}
